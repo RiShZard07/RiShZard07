@@ -6,6 +6,7 @@ Statistics & Machine Learning at Carnegie Mellon (B.S., December 2027). Last sum
 
 | Project | Stack | What it is |
 |---|---|---|
+| [ivr-callflow-engine](https://github.com/RiShZard07/ivr-callflow-engine) | Python (standard library) | IVR self-service call-flow engine: declarative JSON call flows (DTMF and speech menus, digit collection with validation, caller identification, self-service actions, transfers), a static validator with 14 rule codes, a deterministic interpreter with an event log, 25 scripted call-flow test cases, a synthetic caller simulator, and call-data analytics that compare two flow versions with a z-test; 153 tests and a CI gate |
 | [nba-decision-engine](https://github.com/RiShZard07/nba-decision-engine) | Python, scikit-learn, pandas, NumPy | Next-best-action decision engine on a synthetic subscription base: uplift models (T-, S-, X-learners), contextual bandits (LinUCB, Thompson sampling), offline policy evaluation (IPS, SNIPS, DM, DR with bootstrap intervals), eligibility, budget and contact-cap guardrails, plain-language explanations, 63 tests and a CI gate checked against simulator truth |
 | [dispatch-service](https://github.com/RiShZard07/dispatch-service) | Python, FastAPI, SQLAlchemy, SQLite, Docker | Order-dispatch API for a synthetic delivery marketplace: idempotent order creation, SQL-backed state machine, transactional nearest-courier assignment that holds under concurrent requests, optimistic versioning with If-Match, server-sent event feed, transactional outbox with webhook retries, Prometheus-style metrics, S3 export (boto3, tested with moto), 125 tests, Docker image and Render blueprint |
 | [courier-app](https://github.com/RiShZard07/courier-app) | TypeScript, React Native, Expo, Jest | Courier-side mobile client for dispatch-service: typed API client with request ids, timeouts and the backend's error envelope, If-Match transitions with 409 handling, expo-router screens, 80 Jest tests, web build with Vercel config |
@@ -14,7 +15,7 @@ Statistics & Machine Learning at Carnegie Mellon (B.S., December 2027). Last sum
 | [casedesk](https://github.com/RiShZard07/casedesk) | Java 17, React, Playwright, GitHub Actions | Support-ticket service: priority-queue routing, idempotency keys, write-ahead journal with restart recovery, 24 test groups + 6 browser scenarios in CI |
 | [pokemon-commerce-bi](https://github.com/RiShZard07/pokemon-commerce-bi) | Python, SQL, SQLite | ETL pipeline and dimensional warehouse with validation, quarantine, transactional refresh, and 14 tests |
 
-All seven are AI-assisted builds (Claude Code, ChatGPT/Codex) that I reviewed, tested, and extended; each README says exactly what is and is not claimed, and each repo has a VERIFIED_RESULTS.md with the commands and numbers behind every claim.
+All eight are AI-assisted builds (Claude Code, ChatGPT/Codex) that I reviewed, tested, and extended; each README says exactly what is and is not claimed, and each repo has a VERIFIED_RESULTS.md with the commands and numbers behind every claim.
 
 ## Elsewhere
 
